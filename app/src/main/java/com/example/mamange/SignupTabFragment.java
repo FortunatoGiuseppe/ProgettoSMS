@@ -8,14 +8,14 @@ import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
 
 public class SignupTabFragment extends Fragment {
-
+/*
     @Override
     public View onCreate(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         ViewGroup root=(ViewGroup) inflater.inflate(R.layout.signup_tab_fragment, container, attachToRoot: false);
 
         return root;
-    }
+    }*/
 
 
 }
