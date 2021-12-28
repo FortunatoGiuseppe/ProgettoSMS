@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Giuseppe/AndroidStudioProjects/MaMange/app/src/main/res/layout/activity_main.xml" value="0.2817028985507246" />
+        <entry key="..\:/Users/Giuseppe/AndroidStudioProjects/MaMange/app/src/main/res/layout/activity_createjoin_group.xml" value="0.25" />
+        <entry key="..\:/Users/Giuseppe/AndroidStudioProjects/MaMange/app/src/main/res/layout/activity_login.xml" value="0.29375" />
+        <entry key="..\:/Users/Giuseppe/AndroidStudioProjects/MaMange/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Giuseppe/AndroidStudioProjects/MaMange/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.34270833333333334" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/layout/activity_main.xml" value="0.259375" />
       </map>
     </option>
