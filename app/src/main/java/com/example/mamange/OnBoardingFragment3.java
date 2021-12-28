@@ -15,4 +15,10 @@ public class OnBoardingFragment3 extends Fragment{
 
         return root;
     }*/
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.fragment_on_boarding3, container, false);
+
+        return root;
+    }
 }
