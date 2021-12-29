@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Giuseppe/AndroidStudioProjects/MaMange/app/src/main/res/layout/activity_createjoin_group.xml" value="0.2546875" />
+        <entry key="..\:/Users/Giuseppe/AndroidStudioProjects/MaMange/app/src/main/res/layout/activity_login.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/Giuseppe/AndroidStudioProjects/MaMange/app/src/main/res/layout/login_tab_fragment.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/Giuseppe/AndroidStudioProjects/MaMange/app/src/main/res/layout/signup_tab_fragment.xml" value="0.14722222222222223" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22407407407407406" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/drawable/bg_gradient.xml" value="0.21851851851851853" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/drawable/ic_launcher_background.xml" value="0.175" />
