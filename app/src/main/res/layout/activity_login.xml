@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="@color/white"
     tools:context=".LoginActivity">
 
     <ImageView
@@ -23,24 +25,25 @@
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="@drawable/vie_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent=".8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1"
-        android:background="@drawable/vie_bg">
+        app:layout_constraintVertical_bias="1">
+
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/view_pager"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:background="@drawable/vie_bg"
-            app:layout_constraintVertical_bias="0"
-            app:layout_constraintHeight_percent=".8"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".8"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/tab_layout"/>
+            app:layout_constraintTop_toTopOf="@+id/tab_layout"
+            app:layout_constraintVertical_bias="0" />
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
@@ -53,7 +56,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0"
             app:tabIndicatorColor="@color/white"
-            app:tabTextColor="@color/white"/>
+            app:tabTextColor="@color/white" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
