@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Program Files (x86)/Progetti Android/ProgettoSMS/app/src/main/res/layout/activity_login.xml" value="0.2504528985507246" />
+        <entry key="..\:/Program Files (x86)/Progetti Android/ProgettoSMS/app/src/main/res/layout/login_tab_fragment.xml" value="0.12613981762917933" />
+        <entry key="..\:/Program Files (x86)/Progetti Android/ProgettoSMS/app/src/main/res/layout/signup_tab_fragment.xml" value="0.12613981762917933" />
+        <entry key="..\:/Users/Giuseppe/AndroidStudioProjects/MaMange/app/src/main/res/layout/activity_createjoin_group.xml" value="0.2546875" />
+        <entry key="..\:/Users/Giuseppe/AndroidStudioProjects/MaMange/app/src/main/res/layout/activity_login.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/Giuseppe/AndroidStudioProjects/MaMange/app/src/main/res/layout/login_tab_fragment.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/Giuseppe/AndroidStudioProjects/MaMange/app/src/main/res/layout/signup_tab_fragment.xml" value="0.14722222222222223" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22407407407407406" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/drawable/bg_gradient.xml" value="0.21851851851851853" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/drawable/ic_launcher_background.xml" value="0.175" />
@@ -24,11 +31,7 @@
         <entry key="..\:/Users/miche/AndroidStudioProjects/ProgettoSMS/app/src/main/res/layout/login_tab_fragment.xml" value="0.33" />
         <entry key="..\:/Users/miche/AndroidStudioProjects/ProgettoSMS/app/src/main/res/layout/signup_tab_fragment.xml" value="0.27708333333333335" />
         <entry key="..\:/Users/miche/StudioProjects/ProgettoSMS/app/src/main/res/drawable/edit_text_bg.xml" value="0.21770833333333334" />
-        <entry key="..\:/Users/miche/StudioProjects/ProgettoSMS/app/src/main/res/layout/activity_createjoin_group.xml" value="0.2015625" />
-        <entry key="..\:/Users/miche/StudioProjects/ProgettoSMS/app/src/main/res/layout/activity_splash_screen.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/miche/StudioProjects/ProgettoSMS/app/src/main/res/layout/fragment_on_boarding3.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/miche/StudioProjects/ProgettoSMS/app/src/main/res/layout/login_tab_fragment.xml" value="0.2015625" />
-        <entry key="..\:/Users/miche/StudioProjects/ProgettoSMS/app/src/main/res/layout/signup_tab_fragment.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
