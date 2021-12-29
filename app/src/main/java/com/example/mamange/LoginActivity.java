@@ -57,5 +57,7 @@ public class LoginActivity extends AppCompatActivity {
                 Log.i("TAG", "onTabReselected: " + tab.getPosition());
             }
         });
+
+        //okay
     }
 }
