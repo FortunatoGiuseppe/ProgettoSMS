@@ -5,6 +5,8 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -14,6 +16,7 @@ import com.google.android.material.tabs.TabLayout;
 public class LoginActivity extends AppCompatActivity {
     TabLayout tabLayout;
     ViewPager viewPager;
+    Button login;
     FloatingActionButton fb,google;
     float v = 0;
 
@@ -59,5 +62,8 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         //okay
+
+
     }
+
 }
