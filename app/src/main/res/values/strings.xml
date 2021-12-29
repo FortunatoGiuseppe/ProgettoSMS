@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MaMange</string>
+    <string name="crea_group_order">Crea Group Order</string>
+    <string name="unisciti_group_order">Unisciti Group Order</string>
 </resources>
