@@ -30,6 +30,9 @@ public class LoginAdapter extends FragmentPagerAdapter {
             case 1:
                 SignupTabFragment signupTabFragment = new SignupTabFragment();
                 return signupTabFragment;
+            case 2:
+                CreateJoinActivity joinActivity = new CreateJoinActivity();
+                return joinActivity;
             default:
                 return  null;
         }

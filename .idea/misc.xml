@@ -3,12 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Program Files (x86)/Progetti Android/ProgettoSMS/app/src/main/res/layout/activity_createjoin_group.xml" value="0.2" />
+        <entry key="..\:/Program Files (x86)/Progetti Android/ProgettoSMS/app/src/main/res/layout/activity_login.xml" value="0.12613981762917933" />
+        <entry key="..\:/Program Files (x86)/Progetti Android/ProgettoSMS/app/src/main/res/layout/login_tab_fragment.xml" value="0.10740740740740741" />
         <entry key="..\:/Users/Giuseppe/AndroidStudioProjects/MaMange/app/src/main/res/layout/activity_createjoin_group.xml" value="0.2546875" />
-        <entry key="..\:/Users/Giuseppe/AndroidStudioProjects/MaMange/app/src/main/res/layout/activity_login.xml" value="0.3020833333333333" />
+        <entry key="..\:/Users/Giuseppe/AndroidStudioProjects/MaMange/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Users/Giuseppe/AndroidStudioProjects/MaMange/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/Giuseppe/AndroidStudioProjects/MaMange/app/src/main/res/layout/activity_splash_screen.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/Giuseppe/AndroidStudioProjects/MaMange/app/src/main/res/layout/fragment_on_boarding3.xml" value="0.24010416666666667" />
-        <entry key="..\:/Users/Giuseppe/AndroidStudioProjects/MaMange/app/src/main/res/layout/login_tab_fragment.xml" value="0.5" />
+        <entry key="..\:/Users/Giuseppe/AndroidStudioProjects/MaMange/app/src/main/res/layout/login_tab_fragment.xml" value="0.14722222222222223" />
         <entry key="..\:/Users/Giuseppe/AndroidStudioProjects/MaMange/app/src/main/res/layout/signup_tab_fragment.xml" value="0.246875" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22407407407407406" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/drawable/bg_gradient.xml" value="0.21851851851851853" />
@@ -17,10 +20,15 @@
         <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/drawable/ic_splash_image_mamange.xml" value="0.2212962962962963" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/drawable/splash_background.xml" value="0.21851851851851853" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/drawable/splash_theme.xml" value="0.23148148148148148" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/drawable/vie_bg.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/layout/activity_createjoin_group.xml" value="0.2553846153846154" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/layout/activity_login.xml" value="0.13385416666666666" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/layout/activity_main.xml" value="0.259375" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/layout/activity_splash.xml" value="0.25" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/layout/activity_splash_screen.xml" value="0.259375" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/layout/fragment_on_boarding3.xml" value="0.259375" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/layout/login_tab_fragment.xml" value="0.259375" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/layout/signup_tab_fragment.xml" value="0.259375" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.175" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/mipmap-anydpi-v26/ic_launcher_mam.xml" value="0.22407407407407406" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/ProgettoSMS/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.22407407407407406" />
