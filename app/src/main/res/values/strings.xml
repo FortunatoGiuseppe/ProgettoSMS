@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">MaMange</string>
-    <string name="crea_group_order">Crea Group Order</string>
-    <string name="unisciti_group_order">Unisciti Group Order</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="registrati">Sign up</string>
+    <string name="crea">Create Group Order</string>
+    <string name="unisciti">Join Existent Group Order</string>
+    <string name="accedi">Login</string>
+    <string name="passconf">Confirm Password</string>
+    <string name="passdimenticata">Forgot Password?</string>
 </resources>
