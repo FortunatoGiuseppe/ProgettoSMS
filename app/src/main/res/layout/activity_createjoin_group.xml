@@ -12,7 +12,7 @@
         android:id="@+id/creaGroupOrder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/crea_group_order"
+        android:text="@string/crea"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -26,10 +26,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="208dp"
-        android:text="@string/unisciti_group_order"
+        android:text="@string/unisciti"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.485"
         tools:ignore="TextContrastCheck,TextContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

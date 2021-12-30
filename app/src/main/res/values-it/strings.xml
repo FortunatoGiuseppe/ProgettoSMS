@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MaMange</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="registrati">Registrati</string>
+    <string name="crea">Crea Group Order</string>
+    <string name="unisciti">Unisciti ad un Group Order</string>
+    <string name="accedi">Accedi</string>
+    <string name="passconf">Conferma Password</string>
+    <string name="passdimenticata">Password dimenticata?</string>
+</resources>
