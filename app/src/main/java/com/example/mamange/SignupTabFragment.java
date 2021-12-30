@@ -100,7 +100,7 @@ public class SignupTabFragment extends Fragment {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(getActivity(),"User has been registered successfully!",Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getActivity(),CreateJoinActivity.class));
+                            startActivity(new Intent(getActivity(),MainActivity.class));
                         } else {
                             Toast.makeText(getActivity(),"Failed to register",Toast.LENGTH_SHORT).show();
                         }
