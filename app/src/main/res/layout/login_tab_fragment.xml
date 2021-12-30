@@ -57,7 +57,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
-        android:text="@string/login"
+        android:text="@string/accedi"
         android:textColor="@color/salmonOrange"
         android:textSize="16sp"
         android:textStyle="bold"

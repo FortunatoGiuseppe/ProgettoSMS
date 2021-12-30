@@ -33,9 +33,9 @@ public class LoginActivity extends AppCompatActivity {
         tabLayout = findViewById(R.id.tab_layout);
         viewPager = findViewById(R.id.view_pager);
 
-        tabLayout.addTab(tabLayout.newTab().setText("Accedi"));
-        tabLayout.addTab(tabLayout.newTab().setText("Registrati"));
-        tabLayout.addTab(tabLayout.newTab().setText("Ospite"));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.accedi));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.registrati));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.ospite));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final LoginAdapter adapter = new LoginAdapter(getSupportFragmentManager(), this, tabLayout.getTabCount());

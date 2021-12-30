@@ -2,11 +2,17 @@
     <string name="app_name">MaMange</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
-    <string name="login">Login</string>
     <string name="registrati">Sign up</string>
     <string name="crea">Create Group Order</string>
     <string name="unisciti">Join Existent Group Order</string>
     <string name="accedi">Login</string>
     <string name="passconf">Confirm Password</string>
     <string name="passdimenticata">Forgot Password?</string>
+    <string name="username">Username</string>
+    <string name="ospite">Guest</string>
+    <string name="emailRichiestaErr">email is required</string>
+    <string name="passwordRichiestaErr">password is required</string>
+    <string name="emailValidaErr">Please provide valid email!</string>
+    <string name="seiCaratteriErr">Enter at least six character</string>
+    <string name="stessaPassErr">Enter at least six character</string>
 </resources>
