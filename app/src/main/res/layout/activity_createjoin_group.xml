@@ -8,28 +8,67 @@
     android:backgroundTint="@color/white">
 
 
-    <Button
-        android:id="@+id/creaGroupOrder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/crea_group_order"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.607"
-        tools:ignore="TextContrastCheck,TextContrastCheck" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/salmonOrange"
+        android:backgroundTint="@color/salmonOrange">
 
-    <Button
-        android:id="@+id/uniscitiGroupOrder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="208dp"
-        android:text="@string/unisciti_group_order"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.485"
-        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Username"
+            android:minHeight="48dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.264"
+            app:layout_constraintWidth_percent=".8" />
+
+        <Button
+            android:id="@+id/creaGroupOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/crea_group_order"
+            android:textColor="@color/salmonOrange"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username"
+            app:layout_constraintWidth_percent=".8"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/uniscitiGroupOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="@string/unisciti_group_order"
+            android:textColor="@color/salmonOrange"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/creaGroupOrder"
+            app:layout_constraintVertical_bias="0.145"
+            app:layout_constraintWidth_percent=".8"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
