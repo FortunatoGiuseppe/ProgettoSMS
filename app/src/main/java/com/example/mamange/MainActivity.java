@@ -6,15 +6,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextClock;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
     Button logout;
+    FirebaseAuth mAuth;
+    TextView username;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mAuth = FirebaseAuth.getInstance();
         logout = findViewById(R.id.logout);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -22,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 logout();
             }
         });
+        caricaUtente();
     }
 
     public void logout(){
@@ -29,4 +36,15 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this,LoginActivity.class));
         finish();
     }
+    public void caricaUtente(){
+        if(mAuth.getCurrentUser() != null){
+            username = findViewById(R.id.usernameLogin);
+            String user = mAuth.getCurrentUser().getEmail();
+            String[] split = user.split("@");
+            username.setText(split[0]);
+            username.setKeyListener(null);
+
+        }
+    }
+
 }
