@@ -2,6 +2,7 @@ package com.example.mamange;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.LayoutInflater;
@@ -27,6 +28,7 @@ public class SignupTabFragment extends Fragment {
     TextView passconf;
     Button signup;
     private FirebaseAuth mAuth;
+   // final String PASSWORD_PATTERN = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{4,}$";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,7 @@ public class SignupTabFragment extends Fragment {
         pass = root.findViewById(R.id.pass);
         passconf = root.findViewById(R.id.passconf);
         signup = root.findViewById(R.id.registerBtn);
+        mAuth = FirebaseAuth.getInstance();
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,35 +79,28 @@ public class SignupTabFragment extends Fragment {
             pass.requestFocus();
             return;
         }
-        if(passControlStringa != passStringa){
+        /*if(!passStringa.contains(PASSWORD_PATTERN)){
+            pass.setError("Password Rule:\n" +
+                    "At least one capital letter\n" +
+                    "At least one number\n" +
+                    "At least one symbol");
+            pass.requestFocus();
+            return;
+        }*/
+        if(!passControlStringa.contains(passStringa)){
             passconf.setError("Enter the same password");
             passconf.requestFocus();
             return;
         }
-       /* if(passStringa.contains()){
 
-        }*/
 
         mAuth.createUserWithEmailAndPassword(emailStringa, passStringa)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            User user = new User(emailStringa);
-                            FirebaseDatabase.getInstance().getReference("Users")
-                                    .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-                                    .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                @Override
-                                public void onComplete(@NonNull Task<Void> task) {
-                                    if(task.isSuccessful()){
-                                        Toast.makeText(getActivity(),"User has been registered successfully!",Toast.LENGTH_SHORT).show();
-                                    } else
-                                    {
-                                        Toast.makeText(getActivity(),"Failed to register",Toast.LENGTH_SHORT).show();
-                                    }
-                                }
-                            });
-
+                            Toast.makeText(getActivity(),"User has been registered successfully!",Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getActivity(),CreateJoinActivity.class));
                         } else {
                             Toast.makeText(getActivity(),"Failed to register",Toast.LENGTH_SHORT).show();
                         }
