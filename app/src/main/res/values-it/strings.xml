@@ -16,4 +16,5 @@
     <string name="emailValidaErr">Fornisci una email valida!</string>
     <string name="seiCaratteriErr">Inserisci almeno sei caratteri</string>
     <string name="stessaPassErr">Le password non combaciano</string>
+    <string name="logout">Esci</string>
 </resources>

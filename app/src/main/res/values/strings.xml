@@ -15,4 +15,5 @@
     <string name="emailValidaErr">Please provide valid email!</string>
     <string name="seiCaratteriErr">Enter at least six character</string>
     <string name="stessaPassErr">Enter at least six character</string>
+    <string name="logout">Logout</string>
 </resources>
