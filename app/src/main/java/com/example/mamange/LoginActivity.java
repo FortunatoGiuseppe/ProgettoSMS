@@ -1,6 +1,7 @@
 package com.example.mamange;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
@@ -16,7 +17,7 @@ import com.google.android.material.tabs.TabLayout;
 public class LoginActivity extends AppCompatActivity {
     TabLayout tabLayout;
     ViewPager viewPager;
-    Button login;
+    Button registerBtn;
     FloatingActionButton fb,google;
     float v = 0;
 
@@ -60,10 +61,6 @@ public class LoginActivity extends AppCompatActivity {
                 Log.i("TAG", "onTabReselected: " + tab.getPosition());
             }
         });
-
-        //okay
-
-
     }
 
 }

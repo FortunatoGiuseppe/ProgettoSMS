@@ -30,33 +30,7 @@ public class LoginTabFragment extends Fragment {
         email = root.findViewById(R.id.email);
         pass = root.findViewById(R.id.pass);
         forgetPass = root.findViewById(R.id.forget_pass);
-        login = root.findViewById(R.id.button);
+        login = root.findViewById(R.id.loginBtn);
         return root;
-    }
-
-    public void LoginUser(){
-        String emailStringa = email.getText().toString().trim();
-        String passStringa = pass.getText().toString().trim();
-
-        if(emailStringa.isEmpty()){
-            email.setError("email is required");
-            email.requestFocus();
-            return;
-        }
-        if(passStringa.isEmpty()){
-            pass.setError("password is required");
-            pass.requestFocus();
-            return;
-        }
-        if(!Patterns.EMAIL_ADDRESS.matcher(emailStringa).matches()){
-            email.setError("Please provide valid email!");
-            email.requestFocus();
-            return;
-        }
-        if(passStringa.length() < 6){
-            pass.setError("Enter at least six character");
-            pass.requestFocus();
-            return;
-        }
     }
 }
