@@ -1,5 +1,7 @@
 package com.example.mamange;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
@@ -7,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,6 +17,8 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
@@ -42,6 +47,12 @@ public class LoginTabFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 loginUser();
+            }
+        });
+        forgetPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                resetPassword();
             }
         });
         return root;
@@ -83,5 +94,40 @@ public class LoginTabFragment extends Fragment {
                 }
             }
         });
+    }
+
+    public void resetPassword(){
+        EditText resetEmail = new EditText(getView().getContext());
+        AlertDialog.Builder passResetDialog = new AlertDialog.Builder(getView().getContext());
+        passResetDialog.setTitle("Reset Password?");
+        passResetDialog.setMessage("Enter your email to recived reset link");
+        passResetDialog.setView(resetEmail);
+
+        passResetDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                String mail = resetEmail.getText().toString();
+                fAuth.sendPasswordResetEmail(mail).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void unused) {
+                        Toast.makeText(getActivity(),"Reset Link Sent To Your Email",Toast.LENGTH_SHORT).show();
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(getActivity(),"Error! Reset Link is Not Sent"+ e.getMessage(),Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        });
+
+        passResetDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+
+        passResetDialog.create().show();
     }
 }
