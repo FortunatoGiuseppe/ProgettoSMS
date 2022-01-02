@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/salmonOrange"
     tools:context=".MainActivity">
 
     <EditText
@@ -20,25 +21,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.445"
+        app:layout_constraintVertical_bias="0.256"
         app:layout_constraintWidth_percent=".8" />
 
     <Button
         android:id="@+id/uniscitiGroupOrder2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="208dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="@color/white"
         android:text="@string/unisciti"
         android:textColor="@color/salmonOrange"
         android:textSize="16sp"
         android:textStyle="bold"
         app:cornerRadius="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/creaGroupOrder"
-        app:layout_constraintVertical_bias="0.092"
+        app:layout_constraintTop_toBottomOf="@+id/creaGroupOrder2"
         app:layout_constraintWidth_percent=".8"
         tools:ignore="TextContrastCheck,TextContrastCheck" />
 
@@ -46,19 +45,17 @@
         android:id="@+id/creaGroupOrder2"
         android:layout_width="298dp"
         android:layout_height="48dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="44dp"
         android:backgroundTint="@color/white"
         android:text="@string/crea"
         android:textColor="@color/salmonOrange"
         android:textSize="16sp"
         android:textStyle="bold"
         app:cornerRadius="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/uniscitiGroupOrder2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/usernameLogin"
-        app:layout_constraintVertical_bias="0.0"
         app:layout_constraintWidth_percent=".8"
         tools:ignore="TextContrastCheck,TextContrastCheck" />
 
@@ -66,8 +63,10 @@
         android:id="@+id/logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="76dp"
+        android:layout_marginBottom="108dp"
+        android:backgroundTint="@color/white"
         android:text="@string/logout"
+        android:textColor="@color/salmonOrange"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
