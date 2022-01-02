@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/salmonOrange"
+    android:backgroundTint="@color/salmonOrange">
 
 
     <EditText
@@ -24,24 +26,6 @@
         app:layout_constraintWidth_percent=".8" />
 
     <Button
-        android:id="@+id/uniscitiGroupOrder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:text="@string/unisciti"
-        android:textColor="@color/salmonOrange"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:cornerRadius="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/creaGroupOrder"
-        app:layout_constraintVertical_bias="0.092"
-        app:layout_constraintWidth_percent=".8"
-        tools:ignore="TextContrastCheck,TextContrastCheck" />
-
-    <Button
         android:id="@+id/creaGroupOrder"
         android:layout_width="294dp"
         android:layout_height="46dp"
@@ -56,6 +40,24 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username"
+        app:layout_constraintWidth_percent=".8"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/uniscitiGroupOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="@string/unisciti"
+        android:textColor="@color/salmonOrange"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/creaGroupOrder"
+        app:layout_constraintVertical_bias="0.092"
         app:layout_constraintWidth_percent=".8"
         tools:ignore="TextContrastCheck,TextContrastCheck" />
 
