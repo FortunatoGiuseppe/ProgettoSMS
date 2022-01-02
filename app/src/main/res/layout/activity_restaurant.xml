@@ -8,30 +8,41 @@
 
     <ImageView
         android:id="@+id/img_rest_act"
-        android:layout_width="match_parent"
-        android:layout_height="280dp"
-        app:srcCompat="@drawable/ristorante1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:scaleType="fitXY"
-        android:layout_margin="30dp"/>
+        app:srcCompat="@drawable/ristorante1" />
 
     <TextView
         android:id="@+id/nome_rest_act"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
-        android:gravity="center"
+        android:layout_width="226dp"
+        android:layout_height="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="12dp"
+        android:layout_toEndOf="@+id/img_rest_act"
         android:text="Rest"
         android:textColor="@color/white"
-        android:textSize="25dp" />
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/citta_rest_act"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="400dp"
-        android:gravity="center"
+        android:layout_width="225dp"
+        android:layout_height="26dp"
+        android:layout_below="@+id/nome_rest_act"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="13dp"
+        android:layout_toEndOf="@+id/img_rest_act"
         android:text="Citta"
         android:textColor="@color/white"
-        android:textSize="25dp" />
+        android:textSize="20dp" />
 
 </RelativeLayout>

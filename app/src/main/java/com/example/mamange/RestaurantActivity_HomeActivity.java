@@ -1,5 +1,7 @@
 package com.example.mamange;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,7 +33,6 @@ public class RestaurantActivity_HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurant_home);
 
-        //dataref= FirebaseDatabase.getInstance().getReference().child("Restaurant");
         dataref= FirebaseDatabase.getInstance().getReference().child("Restaurant");
 
         inputSearch=findViewById(R.id.barra_cerca_restaurant);
@@ -47,10 +48,19 @@ public class RestaurantActivity_HomeActivity extends AppCompatActivity {
         options=new FirebaseRecyclerOptions.Builder<Restaurant>().setQuery(dataref,Restaurant.class).build();
         adapter=new FirebaseRecyclerAdapter<Restaurant, ViewHolderRestaurant>(options) {
             @Override
-            protected void onBindViewHolder(@NonNull ViewHolderRestaurant holder, int position, @NonNull Restaurant model) {
+            protected void onBindViewHolder(@NonNull ViewHolderRestaurant holder, @SuppressLint("RecyclerView") int position, @NonNull Restaurant model) {
                 holder.textViewcitta.setText(model.citta);
                 Picasso.get().load(model.img).into(holder.imageView);
                 holder.textView.setText(model.nome);
+                holder.v.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent =new Intent(RestaurantActivity_HomeActivity.this,RestaurantActivity.class);
+                        intent.putExtra("RestaurantKey",getRef(position).getKey());
+                        startActivity(intent);
+                    }
+                });
+
             }
 
             @NonNull
