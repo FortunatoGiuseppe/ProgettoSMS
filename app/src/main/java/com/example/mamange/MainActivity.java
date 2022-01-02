@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     Button logout;
     FirebaseAuth mAuth;
     TextView username;
+    Button crea;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         caricaUtente();
+        crea= findViewById(R.id.creaGroupOrder2);
+        crea.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,RestaurantActivity_HomeActivity.class));
+            }
+        });
     }
 
     public void logout(){

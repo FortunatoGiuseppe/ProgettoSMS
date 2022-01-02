@@ -16,4 +16,5 @@
     <string name="seiCaratteriErr">Enter at least six character</string>
     <string name="stessaPassErr">Enter at least six character</string>
     <string name="logout">Logout</string>
+    <string name="cerca">Search a restaurant...</string>
 </resources>
