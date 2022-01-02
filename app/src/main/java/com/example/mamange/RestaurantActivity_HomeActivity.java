@@ -3,6 +3,8 @@ package com.example.mamange;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +20,7 @@ import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.squareup.picasso.Picasso;
 
 public class RestaurantActivity_HomeActivity extends AppCompatActivity {
@@ -40,12 +43,35 @@ public class RestaurantActivity_HomeActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         recyclerView.setHasFixedSize(true);
         
-        loadData();
+        loadData("");
+
+        inputSearch.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                if(editable.toString()!=null){
+                    loadData(editable.toString());
+                }else{
+                    loadData("");
+                }
+            }
+        });
     }
 
-    private void loadData() {
+    private void loadData(String data) {
 
-        options=new FirebaseRecyclerOptions.Builder<Restaurant>().setQuery(dataref,Restaurant.class).build();
+        Query query= dataref.orderByChild("nome").startAt(data).endAt(data+"\uf8ff");
+
+        options=new FirebaseRecyclerOptions.Builder<Restaurant>().setQuery(query,Restaurant.class).build();
         adapter=new FirebaseRecyclerAdapter<Restaurant, ViewHolderRestaurant>(options) {
             @Override
             protected void onBindViewHolder(@NonNull ViewHolderRestaurant holder, @SuppressLint("RecyclerView") int position, @NonNull Restaurant model) {
