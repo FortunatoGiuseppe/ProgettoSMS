@@ -1,5 +1,5 @@
 package com.example.mamange;
-
+//Giuseppe Diasparra
 public class Restaurant {
     public String citta;
     public String img;

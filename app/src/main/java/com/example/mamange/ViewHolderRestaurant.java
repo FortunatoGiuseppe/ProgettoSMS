@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
+//Giuseppe Diasparra
 public class ViewHolderRestaurant extends RecyclerView.ViewHolder {
     public ImageView imageView;
     public TextView textView;

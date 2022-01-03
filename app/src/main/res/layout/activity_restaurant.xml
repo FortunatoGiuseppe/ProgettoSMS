@@ -17,6 +17,8 @@
         android:scaleType="fitXY"
         app:srcCompat="@drawable/ristorante1" />
 
+
+
     <TextView
         android:id="@+id/nome_rest_act"
         android:layout_width="226dp"

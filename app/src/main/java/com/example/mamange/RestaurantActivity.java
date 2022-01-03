@@ -15,7 +15,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
-
+//Giuseppe Diasparra
 public class RestaurantActivity extends AppCompatActivity {
 
     public ImageView imgRestaurant;

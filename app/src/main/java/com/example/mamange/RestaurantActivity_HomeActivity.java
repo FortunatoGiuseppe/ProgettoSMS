@@ -22,7 +22,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.squareup.picasso.Picasso;
-
+//Giuseppe Diasparra
 public class RestaurantActivity_HomeActivity extends AppCompatActivity {
 
     EditText inputSearch;

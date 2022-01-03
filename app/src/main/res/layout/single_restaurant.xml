@@ -32,6 +32,8 @@
         android:textColor="@color/white"
         android:textSize="20dp" />
 
+
+
     <TextView
         android:id="@+id/citta_rest_single"
         android:layout_width="225dp"
