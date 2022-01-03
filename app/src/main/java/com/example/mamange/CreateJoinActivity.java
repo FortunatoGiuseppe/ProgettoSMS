@@ -26,6 +26,12 @@ public  class CreateJoinActivity extends Fragment {
         createGroupOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String usernameString = username.getText().toString().trim();
+                if(usernameString.isEmpty()){
+                    username.setError("Username is required");
+                    username.requestFocus();
+                    return;
+                }
                 startActivity(new Intent(getActivity(),RestaurantActivity_HomeActivity.class));
             }
         });
