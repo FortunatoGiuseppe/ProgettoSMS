@@ -67,6 +67,7 @@ public class LoginActivity extends AppCompatActivity {
                 Log.i("TAG", "onTabReselected: " + tab.getPosition());
             }
         });
+        //controllo utente è loggato
         if(mAuth.getCurrentUser() != null){
             Toast.makeText(LoginActivity.this,"Logged in successfully!",Toast.LENGTH_SHORT).show();
             startActivity(new Intent(LoginActivity.this,MainActivity.class));
