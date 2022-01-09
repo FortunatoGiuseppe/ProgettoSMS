@@ -20,7 +20,6 @@
         android:paddingBottom="8dp" />
 
 
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
