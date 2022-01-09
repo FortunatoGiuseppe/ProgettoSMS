@@ -1,59 +1,73 @@
 package com.example.mamange;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.EditText;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.database.Query;
 import com.squareup.picasso.Picasso;
-
 //Giuseppe Diasparra
 public class RestaurantActivity extends AppCompatActivity {
 
-    public ImageView imgRestaurant;
-    public TextView nomeRestaurant;
-    public TextView cittaRestaurant;
-
-    DatabaseReference ref;
+    RecyclerView recyclerView;
+    FirebaseRecyclerOptions<Category> options_cat;
+    FirebaseRecyclerAdapter<Category,ViewHolderCategory> adapter_cat;
+    DatabaseReference dataref2;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurant);
 
-        cittaRestaurant=findViewById(R.id.citta_rest_act);
-        imgRestaurant=findViewById(R.id.img_rest_act);
-        nomeRestaurant=findViewById(R.id.nome_rest_act);
-        ref= FirebaseDatabase.getInstance().getReference().child("Restaurant");
+        dataref2 =  FirebaseDatabase.getInstance().getReference().child("Categories");
 
-        String RestaurantKey = getIntent().getStringExtra("RestaurantKey");
+        recyclerView=findViewById(R.id.recyclerView_categorie);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+        recyclerView.setHasFixedSize(true);
 
-        ref.child(RestaurantKey).addValueEventListener(new ValueEventListener() {
+        loadData("");
+
+    }
+
+    private void loadData(String data) {
+
+
+        Query query2= dataref2.orderByChild("nome").startAt(data).endAt(data+"\uf8ff");
+
+        options_cat=new FirebaseRecyclerOptions.Builder<Category>().setQuery(query2,Category.class).build();
+        adapter_cat=new FirebaseRecyclerAdapter<Category, ViewHolderCategory>(options_cat) {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(snapshot.exists()){
-                    String nomeRes= snapshot.child("nome").getValue().toString();
-                    String imgUrlRes= snapshot.child("img").getValue().toString();
-                    String cittaRes= snapshot.child("citta").getValue().toString();
-
-                    Picasso.get().load(imgUrlRes).into(imgRestaurant);
-                    nomeRestaurant.setText(nomeRes);
-                    cittaRestaurant.setText(cittaRes);
-                }
+            protected void onBindViewHolder(@NonNull ViewHolderCategory holder, @SuppressLint("RecyclerView") int position, @NonNull Category model) {
+                holder.textViewcategory.setText(model.nome);
             }
 
+            @NonNull
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
+            public ViewHolderCategory onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+                View v_cat= LayoutInflater.from(parent.getContext()).inflate(R.layout.single_category_plate,parent,false);
+                return new ViewHolderCategory(v_cat);
             }
-        });
+        };
+
+
+        adapter_cat.startListening();
+        recyclerView.setAdapter(adapter_cat);
+
     }
 }
