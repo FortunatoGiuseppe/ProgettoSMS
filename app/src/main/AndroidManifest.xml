@@ -52,6 +52,9 @@
             android:theme="@style/zxing_CaptureTheme"
             android:windowSoftInputMode="stateAlwaysHidden"/>
         <activity
+            android:name=".ShowQrCode"
+            android:exported="true"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

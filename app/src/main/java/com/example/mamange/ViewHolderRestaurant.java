@@ -18,10 +18,6 @@ public class ViewHolderRestaurant extends RecyclerView.ViewHolder {
         textViewcitta=itemView.findViewById(R.id.citta_rest_single);
         imageView=itemView.findViewById(R.id.img_rest_single);
         textView=itemView.findViewById(R.id.nome_rest_single);
-
-
         v=itemView;
-
-
     }
 }
