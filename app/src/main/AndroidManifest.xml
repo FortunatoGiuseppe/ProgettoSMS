@@ -40,6 +40,18 @@
             android:name=".ViewHolderRestaurant"
             android:exported="true" />
         <activity
+            android:name=".ScanQrCodeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CreateQrCodeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OrientationCapture"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

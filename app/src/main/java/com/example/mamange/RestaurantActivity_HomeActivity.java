@@ -81,7 +81,7 @@ public class RestaurantActivity_HomeActivity extends AppCompatActivity {
                 holder.v.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent =new Intent(RestaurantActivity_HomeActivity.this,RestaurantActivity.class);
+                        Intent intent =new Intent(RestaurantActivity_HomeActivity.this,CreateQrCodeActivity.class);
                         intent.putExtra("RestaurantKey",getRef(position).getKey());
                         startActivity(intent);
                     }
