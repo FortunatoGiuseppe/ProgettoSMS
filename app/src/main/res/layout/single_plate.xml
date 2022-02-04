@@ -34,7 +34,6 @@
 
     <Button
         android:id="@+id/world"
-        app:icon="@drawable/"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_alignParentTop="true"
