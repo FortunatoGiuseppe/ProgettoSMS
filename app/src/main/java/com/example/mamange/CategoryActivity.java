@@ -42,7 +42,7 @@ public class CategoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plates_of_category);
 
-        dataref_plates = FirebaseDatabase.getInstance().getReference().child("Prova"); //.child(nigiri)
+        dataref_plates = FirebaseDatabase.getInstance().getReference().child("Categories").child("NIGIRI"); //.child(nigiri)
         // non funziona la lettura dal DB dei piatti una vota scelta la categoria
 
         recyclerView = findViewById(R.id.recyclerView_piatti);
@@ -56,13 +56,14 @@ public class CategoryActivity extends AppCompatActivity {
     private void loadData(String data) {
 
 
-        Query query_Plate = dataref_plates.startAt(data).endAt(data + "\uf8ff");
+        Query query_Plate = dataref_plates.orderByChild("nome").startAt(data).endAt(data + "\uf8ff");
 
         options_plates = new FirebaseRecyclerOptions.Builder<Plate>().setQuery(query_Plate, Plate.class).build();
         adapter_plates = new FirebaseRecyclerAdapter<Plate,ViewHolderPlate>(options_plates) {
             @Override
             protected void onBindViewHolder(@NonNull ViewHolderPlate holder, @SuppressLint("RecyclerView") int position, @NonNull Plate model) {
                 holder.textViewPlate.setText(model.nome);
+                Picasso.get().load(model.img).into(holder.imageView);
                /* holder.v_plate.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
