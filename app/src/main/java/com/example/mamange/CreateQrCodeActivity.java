@@ -18,12 +18,15 @@ public class CreateQrCodeActivity extends AppCompatActivity {
     TextView username;
     FirebaseAuth mAuth;
     ImageButton qrCode;
+    Button menuBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_qr);
         mAuth = FirebaseAuth.getInstance();
         qrCode = findViewById(R.id.qrCodeButton);
+
         caricaUtente();
         qrCode.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +34,16 @@ public class CreateQrCodeActivity extends AppCompatActivity {
                 startActivity(new Intent(CreateQrCodeActivity.this,ShowQrCode.class));
             }
         });
+
+        // AGGIUNTO PER LAVORARE SU MENU, SUCCESSIVAMENTE DA TOGLIERE
+        menuBtn = findViewById(R.id.menu);
+        menuBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(CreateQrCodeActivity.this,RestaurantActivity.class));
+            }
+        });
+
     }
 
     public void caricaUtente(){
@@ -43,5 +56,3 @@ public class CreateQrCodeActivity extends AppCompatActivity {
         }
     }
 }
-
-

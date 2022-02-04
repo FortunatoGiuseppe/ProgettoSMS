@@ -23,6 +23,9 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.squareup.picasso.Picasso;
 //Giuseppe Diasparra
+/*
+Schermata per selezionare il ristorante
+ */
 public class RestaurantActivity_HomeActivity extends AppCompatActivity {
 
     EditText inputSearch;

@@ -23,6 +23,11 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.squareup.picasso.Picasso;
 //Giuseppe Diasparra
+
+/*
+Codice corrispondente alla schermata che mostra l'elenco delle categorie dei piatti presenti nel ristorante
+selezionato alla schermata precedente, cioè in RestaurantActivity_HomeActivity
+ */
 public class RestaurantActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
@@ -55,6 +60,14 @@ public class RestaurantActivity extends AppCompatActivity {
             @Override
             protected void onBindViewHolder(@NonNull ViewHolderCategory holder, @SuppressLint("RecyclerView") int position, @NonNull Category model) {
                 holder.textViewcategory.setText(model.nome);
+                holder.v_cat.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent =new Intent(RestaurantActivity.this,CategoryActivity.class);
+                        intent.putExtra("CategoryKey",getRef(position).getKey());
+                        startActivity(intent);
+                    }
+                });
             }
 
             @NonNull

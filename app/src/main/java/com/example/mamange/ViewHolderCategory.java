@@ -8,13 +8,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class ViewHolderCategory extends RecyclerView.ViewHolder {
     public TextView textViewcategory;
-    public View v;
+    public View v_cat;
 
     public ViewHolderCategory(@NonNull View itemView) {
         super(itemView);
         textViewcategory= itemView.findViewById(R.id.category_plate);
-        v = itemView;
-
-
+        v_cat = itemView;
     }
 }

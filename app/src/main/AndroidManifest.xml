@@ -28,16 +28,10 @@
             android:name=".CategoryActivity"
             android:exported="true" />
         <activity
-            android:name=".CreateJoinActivity"
-            android:exported="true" />
-        <activity
             android:name=".RestaurantActivity"
             android:exported="true" />
         <activity
             android:name=".RestaurantActivity_HomeActivity" android:windowSoftInputMode="stateHidden"
-            android:exported="true" />
-        <activity
-            android:name=".ViewHolderRestaurant"
             android:exported="true" />
         <activity
             android:name=".ScanQrCodeActivity"
