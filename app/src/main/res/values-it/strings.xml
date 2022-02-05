@@ -18,4 +18,5 @@
     <string name="stessaPassErr">Le password non combaciano</string>
     <string name="logout">Esci</string>
     <string name="cerca">Cerca un ristorante...</string>
+    <string name="aggiungi">Aggiungi</string>
 </resources>

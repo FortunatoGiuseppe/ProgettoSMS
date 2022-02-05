@@ -17,4 +17,5 @@
     <string name="stessaPassErr">Enter at least six character</string>
     <string name="logout">Logout</string>
     <string name="cerca">Search a restaurant...</string>
+    <string name="aggiungi">Add to cart</string>
 </resources>
